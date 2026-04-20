@@ -1,0 +1,52 @@
+/* Página Ingresar — formularios sobre fondo oscuro */
+
+.ingresar-page .navbar-spacer {
+    height: 76px;
+}
+
+.ingresar-hero {
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+}
+
+.ingresar-card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+}
+
+.ingresar-card .card-body {
+    padding: 1.75rem 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .ingresar-card .card-body {
+        padding: 2rem;
+    }
+}
+
+.ingresar-card .nav-pills .nav-link {
+    color: #495057;
+    font-weight: 600;
+}
+
+.ingresar-card .nav-pills .nav-link.active {
+    background: linear-gradient(90deg, #00aeef, #0054a6);
+    color: #fff;
+}
+
+#login-feedback,
+#register-feedback {
+    min-height: 1.25rem;
+    font-size: 0.9rem;
+}
+
+#login-feedback.is-error,
+#register-feedback.is-error {
+    color: #b02a37;
+}
+
+#login-feedback.is-success,
+#register-feedback.is-success {
+    color: #0a7a44;
+}

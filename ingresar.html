@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ingresar - Moto Lavado SuperBiker</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/paginastyle.css">
+    <link rel="stylesheet" href="css/ingresar.css">
+</head>
+<body class="ingresar-page">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" aria-label="Principal">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="imagenes/Logo 1.png" alt="Moto Lavado SuperBiker" class="logo-navbar">
+                <span class="ms-2 d-none d-md-inline">Moto Lavado SuperBiker</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir menú">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pagina.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="ingresar.html" aria-current="page">Ingresar</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="navbar-spacer"></div>
+
+    <main class="container py-4 py-md-5">
+        <header class="ingresar-hero text-center mb-4">
+            <h1 class="display-5 section-title">Ingresar</h1>
+            <p class="lead text-muted mb-0">Administrador o cliente registrado. Después del inicio de sesión accederás a la gestión de lavados.</p>
+        </header>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-7 col-xl-6">
+                <div class="card ingresar-card shadow">
+                    <div class="card-body">
+                        <ul class="nav nav-pills nav-fill mb-4" id="authTabs" role="tablist">
+                            <li class="nav-item flex-fill" role="presentation">
+                                <button class="nav-link w-100 active" id="tab-login" data-bs-toggle="pill" data-bs-target="#pane-login" type="button" role="tab" aria-controls="pane-login" aria-selected="true">
+                                    <i class="bi bi-box-arrow-in-right me-1"></i>Iniciar sesión
+                                </button>
+                            </li>
+                            <li class="nav-item flex-fill" role="presentation">
+                                <button class="nav-link w-100" id="tab-register" data-bs-toggle="pill" data-bs-target="#pane-register" type="button" role="tab" aria-controls="pane-register" aria-selected="false">
+                                    <i class="bi bi-person-plus me-1"></i>Registrarse
+                                </button>
+                            </li>
+                        </ul>
+
+                        <div class="tab-content" id="authTabsContent">
+                            <div class="tab-pane fade show active" id="pane-login" role="tabpanel" aria-labelledby="tab-login" tabindex="0">
+                                <form id="form-login" novalidate>
+                                    <div class="mb-3">
+                                        <label for="login-user" class="form-label">Usuario o celular</label>
+                                        <input type="text" class="form-control" id="login-user" name="loginUser" required autocomplete="username" placeholder="Tu usuario o número de celular">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="login-pass" class="form-label">Contraseña</label>
+                                        <input type="password" class="form-control" id="login-pass" name="loginPass" required autocomplete="current-password" placeholder="Tu clave">
+                                    </div>
+                                    <p id="login-feedback" class="mb-3" role="status" aria-live="polite"></p>
+                                    <button type="submit" class="btn btn-accent btn-lg w-100">Entrar</button>
+                                </form>
+                            </div>
+                            <div class="tab-pane fade" id="pane-register" role="tabpanel" aria-labelledby="tab-register" tabindex="0">
+                                <form id="form-register" novalidate>
+                                    <div class="mb-3">
+                                        <label for="reg-name" class="form-label">Nombre completo</label>
+                                        <input type="text" class="form-control" id="reg-name" name="regName" required autocomplete="name" placeholder="Tu nombre">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="reg-phone" class="form-label">Celular</label>
+                                        <input type="tel" class="form-control" id="reg-phone" name="regPhone" required autocomplete="tel" inputmode="numeric" placeholder="Ej: 3178735151">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="reg-pass" class="form-label">Contraseña</label>
+                                        <input type="password" class="form-control" id="reg-pass" name="regPass" required autocomplete="new-password" placeholder="Mínimo 4 caracteres">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="reg-pass2" class="form-label">Confirmar contraseña</label>
+                                        <input type="password" class="form-control" id="reg-pass2" name="regPass2" required autocomplete="new-password" placeholder="Repite la clave">
+                                    </div>
+                                    <p id="register-feedback" class="mb-3" role="status" aria-live="polite"></p>
+                                    <button type="submit" class="btn btn-accent btn-lg w-100">Crear cuenta</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer-superbaiket">
+        <div class="container py-5">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h5 class="footer-title">Información del creador</h5>
+                    <ul class="list-unstyled">
+                        <li>Proyecto SuperBiker</li>
+                        <li>David Santiago Barreto Parada</li>
+                        <li>© 2026 - Todos los derechos reservados</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 text-center">
+                    <h5 class="footer-title">Redes sociales</h5>
+                    <div class="d-flex justify-content-center gap-3">
+                        <a href="#" class="footer-social" aria-label="Facebook (pendiente)"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.instagram.com/motolavado_superbiker?igsh=YTVqdnNhYm55aDRh" class="footer-social" aria-label="Instagram Moto Lavado SuperBiker" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@motolavado.sbk" class="footer-social" aria-label="TikTok Moto Lavado SuperBiker" target="_blank" rel="noopener noreferrer"><i class="bi bi-tiktok"></i></a>
+                        <a href="#" class="footer-social" aria-label="WhatsApp (pendiente)"><i class="bi bi-whatsapp"></i></a>
+                    </div>
+                    <p class="small mt-2 text-muted">Facebook y WhatsApp pendientes.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="footer-title">Enlaces de interés</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="footer-link">Inicio</a></li>
+                        <li><a href="pagina.html" class="footer-link">Servicios</a></li>
+                        <li><a href="ingresar.html" class="footer-link">Ingresar</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="js/auth.js"></script>
+    <script>
+(function () {
+    'use strict';
+
+    function getReturnUrl() {
+        var params = new URLSearchParams(window.location.search);
+        var ret = params.get('return');
+        if (ret && ret.indexOf('http') !== 0 && ret.indexOf('//') !== 0) {
+            return ret;
+        }
+        return 'productos.html';
+    }
+
+    if (SBKAuth.getSession()) {
+        window.location.replace(getReturnUrl());
+        return;
+    }
+
+    var loginFeedback = document.getElementById('login-feedback');
+    var registerFeedback = document.getElementById('register-feedback');
+
+    function setFb(el, msg, kind) {
+        el.textContent = msg || '';
+        el.className = 'mb-3';
+        if (kind === 'error') {
+            el.classList.add('is-error');
+        } else if (kind === 'success') {
+            el.classList.add('is-success');
+        }
+    }
+
+    document.getElementById('form-login').addEventListener('submit', function (e) {
+        e.preventDefault();
+        setFb(loginFeedback, '');
+        var user = document.getElementById('login-user').value.trim();
+        var pass = document.getElementById('login-pass').value;
+        if (!user || !pass) {
+            setFb(loginFeedback, 'Completa usuario o celular y contraseña.', 'error');
+            return;
+        }
+        if (SBKAuth.login(user, pass)) {
+            setFb(loginFeedback, 'Acceso correcto. Redirigiendo…', 'success');
+            window.location.href = getReturnUrl();
+        } else {
+            setFb(loginFeedback, 'Usuario/celular o contraseña incorrectos.', 'error');
+        }
+    });
+
+    document.getElementById('form-register').addEventListener('submit', function (e) {
+        e.preventDefault();
+        setFb(registerFeedback, '');
+        var name = document.getElementById('reg-name').value;
+        var phone = document.getElementById('reg-phone').value;
+        var pass = document.getElementById('reg-pass').value;
+        var pass2 = document.getElementById('reg-pass2').value;
+        if (pass !== pass2) {
+            setFb(registerFeedback, 'Las contraseñas no coinciden.', 'error');
+            return;
+        }
+        try {
+            SBKAuth.registerClient(name, phone, pass);
+            setFb(registerFeedback, 'Cuenta creada. Ahora inicia sesión con tu celular y clave.', 'success');
+            document.getElementById('form-register').reset();
+            var tab = new bootstrap.Tab(document.getElementById('tab-login'));
+            tab.show();
+            document.getElementById('login-user').value = SBKAuth.normalizePhone(phone);
+        } catch (err) {
+            setFb(registerFeedback, err.message || 'No se pudo registrar.', 'error');
+        }
+    });
+})();
+    </script>
+</body>
+</html>
