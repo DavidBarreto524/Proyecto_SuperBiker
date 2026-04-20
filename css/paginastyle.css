@@ -124,14 +124,15 @@ main .card .list-group-item {
     }
 }
 
-.nav-link {
+/* Solo barra superior: evita teñir de blanco las pestañas dentro de .card (ej. ingresar.html) */
+.navbar .nav-link {
     color: rgba(255, 255, 255, 0.9) !important;
     font-weight: 600;
     transition: color 0.3s;
 }
 
-.nav-link:hover,
-.nav-link.active {
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
     color: var(--superbaiket-cyan) !important;
 }
 

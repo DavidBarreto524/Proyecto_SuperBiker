@@ -26,13 +26,21 @@
 }
 
 .ingresar-card .nav-pills .nav-link {
-    color: #495057;
+    color: #212529 !important;
     font-weight: 600;
+    background-color: #f1f3f5;
+    border: 1px solid #dee2e6;
+}
+
+.ingresar-card .nav-pills .nav-link:hover {
+    color: #0054a6 !important;
+    background-color: #e9ecef;
 }
 
 .ingresar-card .nav-pills .nav-link.active {
-    background: linear-gradient(90deg, #00aeef, #0054a6);
-    color: #fff;
+    background: linear-gradient(90deg, #00aeef, #0054a6) !important;
+    color: #fff !important;
+    border-color: transparent;
 }
 
 #login-feedback,
