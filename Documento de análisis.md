@@ -1,17 +1,17 @@
 # Documento de Análisis
-## Proyecto Final Unidad 1 - Moto Lavado Superbaiket
+## Proyecto Final Unidad 1 - Moto Lavado SuperBiker
 
 ---
 
 ## 1. Descripción del Proyecto
 
-Este documento presenta el análisis del sitio web desarrollado para **Moto Lavado Superbaiket**, un negocio de limpieza premium para motocicletas. El proyecto es un prototipo de interfaz web responsive desarrollado como trabajo colaborativo de la Unidad 1, siguiendo las especificaciones de la actividad y la plantilla proporcionada.
+Este documento presenta el análisis del sitio web desarrollado para **Moto Lavado SuperBiker**, un negocio de limpieza premium para motocicletas. El proyecto es un prototipo de interfaz web responsive desarrollado como trabajo colaborativo de la Unidad 1, siguiendo las especificaciones de la actividad y la plantilla proporcionada.
 
 **Eslogan:** Limpieza premium para tu moto.
 
 ## 2. Objetivos
 
-- Crear un sitio web funcional para Moto Lavado Superbaiket
+- Crear un sitio web funcional para Moto Lavado SuperBiker
 - Implementar diseño responsive (celular, tablet y escritorio) con Bootstrap
 - Utilizar elementos multimedia: imágenes, videos, formularios, tablas y listas
 - Separar estilos en archivos CSS para personalización (colores, fuentes, tamaños)
@@ -60,7 +60,7 @@ ProyectoFinalUnidad1/
 - **HTML5:** Estructura semántica (Celaya Luna, 2014)
 - **Bootstrap 5.3:** Framework CSS, grid system, componentes (Navbar, Carousel, Cards, Tablas, Formularios), diseño responsive
 - **Bootstrap Icons:** Iconos para redes sociales
-- **CSS3:** Variables, gradientes, tipografía Montserrat, paleta de colores Superbaiket
+- **CSS3:** Variables, gradientes, tipografía Montserrat, paleta de colores SuperBiker
 - **Google Fonts:** Fuente Montserrat
 
 ## 6. Diseño y Branding
@@ -84,7 +84,7 @@ El sitio utiliza el sistema de grillas de Bootstrap para adaptarse a:
 
 ## 9. Conclusiones
 
-El prototipo cumple con todos los requisitos de la actividad: estructura de carpetas, páginas con navbar, carrusel, secciones de contenido multimedia, footer en tres columnas y hojas de estilos CSS para personalización. El diseño está alineado con la identidad visual de Moto Lavado Superbaiket y sirve como base para futuras iteraciones del sitio.
+El prototipo cumple con todos los requisitos de la actividad: estructura de carpetas, páginas con navbar, carrusel, secciones de contenido multimedia, footer en tres columnas y hojas de estilos CSS para personalización. El diseño está alineado con la identidad visual de Moto Lavado SuperBiker y sirve como base para futuras iteraciones del sitio.
 
 ---
 

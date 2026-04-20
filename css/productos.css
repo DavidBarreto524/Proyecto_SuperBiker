@@ -1,0 +1,250 @@
+/* Gestión de lavados (productos) — Grid responsive */
+
+.productos-page .navbar-spacer {
+    height: 76px;
+}
+
+.productos-hero {
+    padding-top: 0.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.product-form-card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+}
+
+.product-form-card .card-body {
+    padding: 1.75rem;
+}
+
+@media (min-width: 768px) {
+    .product-form-card .card-body {
+        padding: 2rem;
+    }
+}
+
+.product-form-card .form-label {
+    font-weight: 600;
+    margin-bottom: 0.35rem;
+}
+
+.product-form-card label.text-placa {
+    color: #000000 !important;
+}
+
+.coupon-hint {
+    font-size: 0.85rem;
+    color: rgba(33, 37, 41, 0.65);
+}
+
+.product-form-card .form-control-readonly,
+.product-form-card textarea.form-control-readonly {
+    background-color: #e9ecef;
+    cursor: default;
+    resize: none;
+}
+
+.product-form-card textarea.form-control-readonly {
+    min-height: 5rem;
+}
+
+#form-feedback {
+    min-height: 1.5rem;
+    font-size: 0.9rem;
+}
+
+#form-feedback.is-error {
+    color: #b02a37;
+}
+
+#form-feedback.is-success {
+    color: #0a7a44;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+@media (min-width: 576px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 992px) {
+    .product-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.75rem;
+    }
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(0, 84, 166, 0.12);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(0, 174, 239, 0.15);
+}
+
+.product-card__image-wrap {
+    position: relative;
+    aspect-ratio: 4 / 3;
+    background: linear-gradient(145deg, #e8eef5, #f5f7fa);
+    overflow: hidden;
+}
+
+.product-card__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.product-card__body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 1.1rem 1.25rem 1.25rem;
+}
+
+.product-card__title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 0.5rem;
+    line-height: 1.3;
+}
+
+/* Sobrescribe main p (texto claro) de paginastyle.css */
+main .product-card__identifier {
+    font-size: 0.9rem;
+    margin-bottom: 0.65rem;
+    padding: 0.5rem 0.65rem;
+    background: rgba(0, 84, 166, 0.08);
+    border-radius: 8px;
+    border-left: 3px solid var(--superbaiket-cyan, #00aeef);
+    color: #212529 !important;
+}
+
+main .product-card__identifier-label {
+    color: #495057 !important;
+    font-weight: 600;
+}
+
+main .product-card__identifier strong {
+    color: #000000 !important;
+    font-weight: 700;
+}
+
+/* Sobrescribe main p (texto claro) de paginastyle.css */
+main .product-card__description {
+    font-size: 0.9rem;
+    color: #000000 !important;
+    flex: 1;
+    margin-bottom: 1rem;
+    line-height: 1.45;
+}
+
+.product-card__meta {
+    font-size: 0.75rem;
+    color: #6c757d;
+    margin-bottom: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+.product-card__prices {
+    margin-bottom: 1rem;
+}
+
+.product-card__price-final {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--superbaiket-azul, #0054A6);
+}
+
+.product-card__price-original {
+    font-size: 0.9rem;
+    color: #6c757d;
+    text-decoration: line-through;
+    margin-left: 0.35rem;
+}
+
+.product-card__badge {
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    background: linear-gradient(90deg, #00aeef, #0054a6);
+    color: #fff;
+    padding: 0.25rem 0.5rem;
+    border-radius: 6px;
+    margin-top: 0.35rem;
+}
+
+.product-card__delete {
+    margin-top: auto;
+    width: 100%;
+}
+
+.empty-catalog {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 2.5rem 1rem;
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 1rem;
+    border: 1px dashed rgba(255, 255, 255, 0.25);
+    border-radius: 12px;
+}
+
+.catalog-toolbar .form-label {
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.catalog-toolbar .input-group {
+    max-width: 420px;
+}
+
+.catalog-toolbar .form-control,
+.catalog-toolbar .input-group-text {
+    background-color: #fff !important;
+    color: #212529 !important;
+}
+
+.catalog-toolbar .form-control::placeholder {
+    color: #6c757d;
+    opacity: 1;
+}
+
+.catalog-toolbar .form-control:focus {
+    box-shadow: none;
+    border-color: rgba(0, 174, 239, 0.45);
+    color: #212529 !important;
+}
+
+.product-search-empty {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 0.95rem;
+    padding: 0.75rem 1rem;
+    background: rgba(255, 193, 7, 0.12);
+    border: 1px solid rgba(255, 193, 7, 0.35);
+    border-radius: 8px;
+}
+
+.product-card--hidden {
+    display: none !important;
+}
